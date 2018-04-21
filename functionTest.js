@@ -50,6 +50,9 @@ function viewCart()  {
     var index = 0;
     while(index < cart.length)  {
     cartList = cartList + `${cart[index]['itemName']} at \$${cart[index]['itemPrice']}`;
+    if(index < cart.length -1)  {
+      cartList = cartList + ', '
+    }
     if(index === cart.length -2) {
       cartList = cartList + ', and ';
     }
