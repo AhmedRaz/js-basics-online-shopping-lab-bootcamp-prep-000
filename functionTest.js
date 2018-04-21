@@ -51,7 +51,9 @@ function viewCart()  {
     while(index < cart.length)  {
     cartList = cartList + `${cart[index]['itemName']} at \$${cart[index]['itemPrice']}`;
     if(index < cart.length -1)  {
-      if(cart.length -1 === 1){}
+      if(cart.length -1 === 1){
+        cartList = cartList + ' ';
+      }
       else  {
       cartList = cartList + ', '}
     }
