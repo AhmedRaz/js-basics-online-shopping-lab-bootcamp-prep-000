@@ -43,7 +43,7 @@ function viewCart()  {
   var cartList = '';
   if(cart.length === 0)  {
     console.log("Your shopping cart is empty.");
-    return "The line is currently empty."
+    return "Your shopping cart is empty."
   }
   else if(cart.length > 0)  {
    cartList = "In your cart, you have ";
