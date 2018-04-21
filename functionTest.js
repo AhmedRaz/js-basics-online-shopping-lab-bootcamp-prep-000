@@ -68,6 +68,10 @@ function viewCart()  {
   }
 }
 
+function removeFromCart(item)  {
+  
+}
+
 addToCart("Peanut Butter");
 viewCart();
 addToCart("Socks");
