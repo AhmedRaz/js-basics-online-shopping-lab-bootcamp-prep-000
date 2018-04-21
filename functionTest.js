@@ -70,6 +70,8 @@ function viewCart()  {
 
 function removeFromCart(item)  {
   itemIndex = findItem(item);
+  if(itemIndex !=== null) {
+    
   
 }
 
