@@ -125,7 +125,7 @@ console.log(`You currently have ${cart.length} items, at a total of \$${total()}
   viewCart();
   placeOrder();
   viewCart();
-  placeOrder(123456789);
+  placeOrder('123456789');
   viewCart();
   
   
