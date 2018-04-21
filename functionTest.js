@@ -82,6 +82,12 @@ function removeFromCart(item)  {
     }
 }
 
+function placeOrder(cardNumber)  {
+  if(cardNumber.length === 0)  {
+    console.log()
+  }
+}
+
 addToCart("Peanut Butter");
 viewCart();
 addToCart("Socks");
