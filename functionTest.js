@@ -49,7 +49,7 @@ function viewCart()  {
    cartList = "In your cart, you have ";
     var index = 0;
     while(index < cart.length)  {
-    lineCount = lineCount + `${index+1}`+ '. ' + `${line[index]}`;
+    cartList = cartList + `${index+1}`+ '. ' + `${line[index]}`;
     if(index < line.length -1) {
       lineCount = lineCount + ', ';
     }
