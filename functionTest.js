@@ -123,4 +123,9 @@ console.log(`You currently have ${cart.length} items, at a total of \$${total()}
   removeFromCart('cat food');
   removeFromCart('Glock k-47');
   viewCart();
+  placeOrder();
+  viewCart();
+  placeOrder(123456789);
+  viewCart();
+  
   
