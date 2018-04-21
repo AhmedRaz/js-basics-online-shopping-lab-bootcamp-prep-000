@@ -84,8 +84,14 @@ function removeFromCart(item)  {
 
 function placeOrder(cardNumber)  {
   if(cardNumber.length === 0)  {
-    console.log()
+    console.log('Sorry, we don\'t have a credit card on file for you.');
+    return 'Sorry, we don\'t have a credit card on file for you.'
   }
+  else  {
+    console.log(`Your total cost is \$${total()}, which will be charged to the card ${cardNumber}.`);
+    return `Your total cost is \$${total()}, which will be charged to the card ${cardNumber}.`;
+  }
+  cart.length = 0; //clears cart array
 }
 
 addToCart("Peanut Butter");
