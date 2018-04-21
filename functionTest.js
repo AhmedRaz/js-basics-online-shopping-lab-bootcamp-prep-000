@@ -26,7 +26,7 @@ function findItem(item)  {
   }
   if(indexLocation !== null){
   return indexLocation;}
-  else{ return "Item not found."}
+  else{ return null}
  
      
 }
