@@ -71,8 +71,12 @@ function viewCart()  {
 function removeFromCart(item)  {
   itemIndex = findItem(item);
   if(itemIndex !=== null) {
-    
-  
+    var removed = cart.splice(itemIndex, 1);
+    console.log(`${item} has been removed from the cart`)
+    }
+    else  {
+      cosole.log(itemIndex)
+    }
 }
 
 addToCart("Peanut Butter");
