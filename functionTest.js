@@ -67,6 +67,7 @@ function viewCart()  {
 addToCart("Peanut Butter");
 viewCart();
 addToCart("Socks");
+viewCart();
 addToCart("Iced Tea");
 console.log(cart.length);
 for(index = 0; index < cart.length; index++)  {
