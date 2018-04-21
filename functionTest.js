@@ -105,4 +105,7 @@ console.log(`You currently have ${cart.length} items, at a total of \$${total()}
   var finds1 = findItem("Iced Tea");
   console.log(finds1);
   viewCart();
+  removeFromCart('cat food');
+  removeFromCart('Glock k-47');
+  viewCart();
   
