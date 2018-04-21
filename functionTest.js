@@ -49,14 +49,15 @@ function viewCart()  {
    cartList = "In your cart, you have ";
     var index = 0;
     while(index < cart.length)  {
-    cartList = cartList + `${index+1}`+ '. ' + `${line[index]}`;
+    cartList = cartList + `${cart[index]['itemName']} at \$${cart[index]['itemPrice']}`;
     if(index < line.length -1) {
-      lineCount = lineCount + ', ';
+      cartList = cartList + ', and ';
     }
     ++index;
     }
-    console.log(lineCount);
-    return lineCount;
+    cartList = cartList + '.'
+    console.log(cartList);
+    return cartList;
   }
 }
 
@@ -83,4 +84,5 @@ console.log(`You currently have ${cart.length} items, at a total of \$${total()}
   console.log(finds);
   var finds1 = findItem("Iced Tea");
   console.log(finds1);
+  viewCart();
   
