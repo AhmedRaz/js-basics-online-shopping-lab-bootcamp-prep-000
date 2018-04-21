@@ -54,7 +54,7 @@ function viewCart()  {
       cartList = cartList + ', '
     }
     if(index === cart.length -2) {
-      cartList = cartList + ' and ';
+      cartList = cartList + 'and ';
     }
     ++index;
     }
