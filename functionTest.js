@@ -24,9 +24,11 @@ function findItem(item)  {
       {indexLocation = index;}
     }
   }
-  if(indexLocation !== null){
-  return indexLocation;}
-  else{ return null}
+  if(indexLocation !== null)  {
+    return indexLocation;
+    }
+  else  { 
+    return null;}
  
      
 }
@@ -72,10 +74,11 @@ function removeFromCart(item)  {
   var itemIndex = findItem(item);
   if(itemIndex !== null) {
     var removed = cart.splice(itemIndex, 1);
-    console.log(`${item} has been removed from the cart`)
+    console.log(`${item} has been removed from the cart.`);
     }
     else  {
-      cosole.log(itemIndex)
+      console.log('That item is not in your cart.');
+      return 'That item is not in your cart.';
     }
 }
 
